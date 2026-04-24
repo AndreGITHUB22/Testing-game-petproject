@@ -1,45 +1,62 @@
-# What is ‘The Precinct’?
-A single-player top-down open-world arcade-action police game, set in a fictional metropolitan US city, in the 1980’s.
+# Requirements — "The Precinct" game testing
 
-# Who is the developer?
-Fallen Tree Games.
+## 1. Overview
+This document defines expected behavior of core gameplay systems.
 
-# Who is the publisher?
-Kwalee.
+---
 
-# What platforms is it available for?
-Steam, PS5, and Xbox Series X/S
+## 2. Functional Requirements
 
-# What do you do in the game?
-The player will face a variety of procedural crimes, ranging from bank robberies to parking tickets. The player chooses which Callouts to respond to, and how to deal with them. By doing good police work (successful pursuits etc), the player earns Support Tokens. These can be ‘spent’, on Callouts, to request back-up, spike strips, roadblocks etc.
+### 2.1 Callout System
+- The system should generate random callouts during patrol
+- The player should be able to accept or ignore callouts
+- The system should assign different types of incidents:robbery and kill of officer
 
-# Is this a sim?
-This is an action-focused experience that is heavily influenced by the style, feel and tone of 1980’s cop shows and movies. The game will recreate those thrilling chases, shootouts and thrills of those fictional stories. We consult with a veteran NYPD officer (who served in this era), however, the game is not intended to be an exact depiction of real police work. Nevertheless, role-players will enjoy the open-world exploration aspects of the game, as well as ‘low-intensity’ tasks such as parking tickets etc.
+---
 
-# Is there a story?
-Yes, there is a story.
+### 2.2 Player Actions
+- The player should be able to move freely in the open world
+- The player should be able to interact with suspects
+- The player should receive rewards (Support Tokens) for successful actions
 
-# Can I be a bad cop?
-No. The player is encouraged to ‘play by the rules’. Breaches of conduct will result in disciplinary action.
+---
 
-# Do you have a partner?
-Yes. He follows the player and supports him.
+### 2.3 AI Behavior — Suspects
+- NPC suspects should attempt to escape when detected
+- NPC suspects should react to player proximity
+- NPC suspects should navigate around obstacles without getting stuck
 
-# Does the game feature SWAT/ESU?
-You can call in an ESU-type van containing ESU-type officers which are better armoured. There are no plans for these units to have special abilities or tactics, but they will be better armed and better armoured. You cannot play as a these units.
+---
 
-# Are there building interiors?
-Most of the gameplay takes place outdoors, but there are a small number of building interiors to visit during open gameplay and as part of the story.
+### 2.4 AI Behavior — Partner
+- The partner should follow the player
+- The partner should assist during pursuits
+- The partner should not remain idle during active scenarios
 
-# Will there be a first-person / third-person camera
-No. The game was designed to be top-down only.
+---
 
-# Can I do detective work and solve puzzles?
-No. You are a beat cop dealing with day-to-day incidents on the street, and larger themes as part of the story.
+### 2.5 Support System
+- The player should be able to request backup
+- The system should spawn backup units after request
+- Backup units should assist in resolving incidents
 
-# Does the PC version support modding?
-No, there is no official modding support.
+---
 
-# Will there be co-op or multiplayer?
-We are focused on delivering the best single-player experience we can. There are no plans for co-op or multiplayer at this time.
+## 3. Non-Functional Requirements
 
+### 3.1 Performance
+- The game should maintain a frame rate of at least 30 FPS on the "Steam Deck" graphics preset during normal gameplay
+
+
+---
+
+### 3.2 Usability
+- UI prompts should be clear and understandable
+- Player actions should have visible feedback
+
+---
+
+## 4. Edge Case Requirements
+- The system should handle multiple simultaneous callouts
+- The system should not break when player ignores objectives
+- AI should behave consistently under stress conditions

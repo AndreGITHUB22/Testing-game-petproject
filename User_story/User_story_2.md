@@ -1,6 +1,5 @@
 ID:US-02<br>
 Category:Inventory<br>
-As a player <br>
 As a player,<br>
 I want to store weapons in my inventory,<br>
 so that I can manage them based on my needs<br>

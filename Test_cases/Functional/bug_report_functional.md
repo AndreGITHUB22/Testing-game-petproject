@@ -1,6 +1,6 @@
 # Defect Report
 
-**Defect ID:** Presc_bug_FN_01
+**Defect ID:** Presc_bu7g_FN_01
 
 **Summary:** “Add More Medicine” title remains visible when “Medicine” text field is not empty
 

@@ -1,35 +1,32 @@
 # Test Case
 
-**Test case ID:** Presc.form.FN.02
+**Test case ID:** TC.FN.02
 
-**Summary:** Verify saving changes function
+**Summary:** Verify that player can change vehicle color 
 
 **Test case type:** Functional
 
-**Priority:** High
+**Priority:** Low
 
 ## Precondition
-“Prescription” page is opened
+Game is opened
+Vehicle customization menu is opened
 
 ## Test Steps
 
 | N | Test step | Test data | Expected result |
 |---|---|---|---|
-| 1 | Enter valid data in the “Disease” text field | Flu | Data is entered into the field and displayed |
-| 2 | Enter valid data in the “Symptoms” text field | Fever | Data is entered into the field and displayed |
-| 3 | Enter valid data in the “Medicine” text field | Ibuprom | Data is entered into the field and displayed |
-| 4 | Enter valid data in the “Procedure to use medicine” text field | 2 times per day | Data is entered into the field and displayed |
-| 5 | Enter valid data in the “Feedback” text field | Good | Data is entered into the field and displayed |
-| 6 | Enter valid data in the “Signature” text field | Andrew M. | Data is entered into the field and displayed |
-| 7 | Press “Save changes” button |  | The button becomes inactive, input fields become read-only, loading screen appears |
-| 8 | Wait until loading end |  | User is redirected to “Main” page |
-| 9 | Click on “Prescriptions” title in top of page |  | “Prescription” page is opened, created prescription is displayed |
+| 1 | Press "Customize" button|-| List of available vehicle skins appear , "Customize" button disappear |
+| 2 | Press "Down" | - | Car changed skin |
+| 3 | Press "Confirm" button | - | Confirm sound play |
+| 4 | Press "Back" button | - | Car skin remain |
+| 5 | Press "Back" button | - | Changes are saved , car go out from garage, control back to player |
 
 ## Post Condition
-Data saved on “Prescription” page
+Vehicle color is changed 
 
 ## Additional Information
 
 - **Designer:** Andrii Kolpakov
 - **Status:** Pass
-- **Created date:** 20.04.2026
+- **Created date:** 06.05.2026

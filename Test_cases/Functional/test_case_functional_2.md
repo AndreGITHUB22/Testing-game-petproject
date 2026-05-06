@@ -2,11 +2,11 @@
 
 **Test case ID:** TC.FN.02
 
-**Summary:** Verify that player can change vehicle color 
+**Summary:** Verify that player can change and save vehicle color
 
 **Test case type:** Functional
 
-**Priority:** Low
+**Priority:** Medium
 
 ## Precondition
 Game is opened
@@ -16,10 +16,10 @@ Vehicle customization menu is opened
 
 | N | Test step | Test data | Expected result |
 |---|---|---|---|
-| 1 | Press "Customize" button|-| List of available vehicle skins appear , "Customize" button disappear |
-| 2 | Press "Down" | - | Car changed skin |
-| 3 | Press "Confirm" button | - | Confirm sound play |
-| 4 | Press "Back" button | - | Car skin remain |
+| 1 | Press "Customize" button|-| List of available vehicle colors appear , "Customize" button disappear |
+| 2 | Press "Down" | - | Car changed color |
+| 3 | Press "Confirm" button | - | Confirmation sound is  played |
+| 4 | Press "Back" button | - | Car color remain |
 | 5 | Press "Back" button | - | Changes are saved , car go out from garage, control back to player |
 
 ## Post Condition

@@ -9,21 +9,21 @@
 **Priority:** Medium
 
 ## Precondition
-Game is opened
+Game is opened <br>
 Vehicle customization menu is opened
 
 ## Test Steps
 
 | N | Test step | Test data | Expected result |
 |---|---|---|---|
-| 1 | Press "Customize" button|-| List of available vehicle colors appear , "Customize" button disappear |
-| 2 | Press "Down" | - | Car changed color |
+| 1 | Press "Customize" button|-| List of available vehicle colors appears , "Customize" button disappears |
+| 2 | Press "Down" | - | Vehicle changed color |
 | 3 | Press "Confirm" button | - | Confirmation sound is  played |
-| 4 | Press "Back" button | - | Car color remain |
-| 5 | Press "Back" button | - | Changes are saved , car go out from garage, control back to player |
+| 4 | Press "Back" button | - | Chosen vehicle color remains  , List of available vehicle colors disappears  |
+| 5 | Press "Back" button | - | Changes are saved , vehicle exits from garage, control returns to player |
 
 ## Post Condition
-Vehicle color is changed 
+Selected vehicle color is saved
 
 ## Additional Information
 
